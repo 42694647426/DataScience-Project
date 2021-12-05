@@ -2,7 +2,7 @@ import pandas as pd
 from tqdm import tqdm
 
 df = pd.read_csv ('data/clear_tweets.tsv',sep='\t', index_col=False)
-
+df = df.iloc[: , 1:]
 for index, row in tqdm(df.iterrows()):
     #print(row["Twitts"])
     if "omicron" in row["Twitts"].lower():
