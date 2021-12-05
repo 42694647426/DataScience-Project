@@ -7,9 +7,9 @@ for index, row in tqdm(df.iterrows()):
     #print(row["Twitts"])
     if "omicron" in row["Twitts"].lower():
         df.at[index, "Topic"] = "O"
-    elif any(x in row["Twitts"].lower() for x in ["vaccine", "passport", "pfizer", "moderna", "johnson"]):
+    elif any(x in row["Twitts"].lower() for x in ["vaccine", "vac", "vax", "passport", "pfizer", "moderna", "johnson"]):
         df.at[index, "Topic"] = "V"
-    elif any(x in row["Twitts"].lower() for x in ["news", "policies", "quarantine", "government", "positive"]):
+    elif any(x in row["Twitts"].lower() for x in ["news","policy", "policies", "quarantine", "government", "positive"]):
         df.at[index, "Topic"] = "N"
     elif any(x in row["Twitts"].lower() for x in ["symptoms", "life", "job", "change", "experience"]):
         df.at[index, "Topic"] = "I"
