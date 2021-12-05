@@ -1,5 +1,5 @@
 # Topic Category
- 3~8 Topics
+3~8 Topics
 
 ### O: Omicron
 
@@ -14,9 +14,6 @@
 
 ### E: Emotional comments 
 ("I don't want to die" "I hate getting tested", including ironic comments, doubt comments, Questions)
-
-### X : Others
-Not belongs to any categories
 
 
 ### Categorized priority from top to down. 
