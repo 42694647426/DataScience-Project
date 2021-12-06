@@ -2,7 +2,7 @@
 3~8 Topics
 
 ### O: Omicron
-Including mention about "new variant".
+Including mention about "new variant", Delta, etc.
 
 ### V: Vaccine 
 (anything related to vaccine, including vaccine passport, child vaccine)
@@ -13,8 +13,10 @@ Including mention about "new variant".
 ### I: Influences 
 (experience, symptoms, daily life, lose job, what people do or change during covid perioed)
 
-### E: Emotional comments 
-("I don't want to die" "I hate getting tested", including ironic comments, doubt comments, Questions)
+### P: Opinion comments 
+Including emotional comments and opinions about Covid, ironic comments, doubt comments, questions, concerns.
+
+("I don't want to die" "I hate getting tested" "Covid will live with us forever" "@xxx have you ever consider xxx?")
 
 
 ### Categorized priority from top to down. 
