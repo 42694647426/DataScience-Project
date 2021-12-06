@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv ('../data/raw_tweets.txt',sep='\t')
+df = pd.read_csv ('raw_tweets.txt',sep='\t')
 df = df.drop_duplicates(keep=False)
 df = df[df.Twitts.str.count(' ').add(1) > 15]
 df = df.sample(n = 1000)
