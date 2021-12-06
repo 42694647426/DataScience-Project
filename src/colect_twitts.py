@@ -12,7 +12,7 @@ start_time = '2021-12-01T00:00:00Z'
 # Replace with time period of your choice
 end_time = '2021-12-02T00:00:00Z'
 
-with open('raw_tweets.txt', 'a+') as filehandle:
+with open('raw_twitts.txt', 'a+') as filehandle:
     # Replace the limit=1000 with the maximum number of Tweets you want
     for tweet in tweepy.Paginator(client.search_recent_tweets, query=query,
                               start_time=start_time, end_time=end_time,
