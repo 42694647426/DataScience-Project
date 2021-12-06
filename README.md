@@ -2,6 +2,7 @@
 3~8 Topics
 
 ### O: Omicron
+Including mention about "new variant".
 
 ### V: Vaccine 
 (anything related to vaccine, including vaccine passport, child vaccine)
