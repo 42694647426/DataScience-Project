@@ -1,7 +1,7 @@
 import pandas as pd
 from tqdm import tqdm
 
-df = pd.read_csv ('../data/clear_twitts.tsv',sep='\t', index_col=False)
+df = pd.read_csv('../data/clear_twitts.tsv',sep='\t', index_col=False)
 df = df.astype({"Topic":str})
 df = df.astype({"Sentiment":str})
 print(type(df.at[5, "Topic"]))
@@ -9,13 +9,13 @@ print(type(df.at[5, "Topic"]))
 for index, row in tqdm(df.iterrows()):
     #print(row["Twitts"])
 
-    if "omicron" in row["Twitts"].lower():
+    if any(x in row["Twitts"].lower() for x in ["omicron", "variant"]):
         df.at[index, "Topic"] = "O"
     elif any(x in row["Twitts"].lower() for x in ["vaccine", "vac", "vax", "passport"]):
         df.at[index, "Topic"] = "V"
     elif any(x in row["Twitts"].lower() for x in ["news", "policy", "policies", "quarantine", "government", "positive"]):
         df.at[index, "Topic"] = "N"
-    elif any(x in row["Twitts"].lower() for x in ["symptoms", "life", "job", "change", "experience", "become"]):
+    elif any(x in row["Twitts"].lower() for x in ["symptom", "life", "job", "change", "experience", "become"]):
         df.at[index, "Topic"] = "I"
     elif any(x in row["Twitts"].lower() for x in ["think", "hate", "die", "like", "afraid"]):
         df.at[index, "Topic"] = "P"
