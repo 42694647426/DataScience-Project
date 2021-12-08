@@ -1,7 +1,7 @@
 import pandas as pd
 from tqdm import tqdm
 
-df = pd.read_csv('../data/clear_twitts.tsv',sep='\t', index_col=False)
+df = pd.read_csv('./data/clear_twitts.tsv',sep='\t', index_col=False)
 df = df.astype({"Topic":str})
 df = df.astype({"Sentiment":str})
 print(type(df.at[5, "Topic"]))
@@ -31,4 +31,4 @@ for index, row in tqdm(df.iterrows()):
         df.at[index, "Sentiment"] = None
 
 print(df.head())
-df.to_csv("../data/new_clear_twitts_anno.tsv", sep="\t", index=False)
+df.to_csv("./data/new_clear_twitts_anno.tsv", sep="\t", index=False)

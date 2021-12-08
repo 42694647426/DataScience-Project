@@ -15,7 +15,7 @@ About something really happened.
 (experience, symptoms, daily life, lose job, what people do or change during covid perioed)
 
 ### P: Opinion comments 
-Something maybe not happen, i.e. not facts
+Something maybe not happen. i.e. not facts.
 Including emotional comments and opinions about Covid, ironic comments, doubt comments, questions, concerns.
 
 ("I don't want to die" "I hate getting tested" "Covid will live with us forever" "@xxx have you ever consider xxx?")
@@ -34,4 +34,10 @@ positive/neutral/negative
 ### E: Neutral
 
 ### N: Negative
+
+# Running Instructions
+
+```bash
+python ./src/categorize.py
+```
 
