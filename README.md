@@ -35,9 +35,9 @@ positive/neutral/negative
 
 ### N: Negative
 
-# Running Instructions
+# Running Scripts Instructions
 
 ```bash
-python ./src/categorize.py
+python ./src/categorize.py  # this creates a tsv file in /data directory with simple annotations done by python.  
 ```
 
