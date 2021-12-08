@@ -15,9 +15,11 @@ def bar_graph(df: pd.DataFrame):
     df_count.loc[df_count["Sentiment"] == 'N', "Sentiment"] = "Negative"
     df_count.loc[df_count["Sentiment"] == 'E', "Sentiment"] = "Neutral"
 
-    df_count = df_count.groupby(["Topic", "Sentiment"])["Twitts"].count().reset_index(name="Count")
+    df_count = df_count.groupby(["Topic", "Sentiment"])["Twitts"].count()
     print(df_count.head(5))
     df_count.unstack("Sentiment").plot.bar()
+    plt.ylabel("Count")
+    plt.xticks(rotation = 0)
     plt.show()
     
 
