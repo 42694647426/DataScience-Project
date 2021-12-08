@@ -11,9 +11,11 @@ Including mention about "new variant", Delta, etc.
 (including mention some famous people, which famous test postivie, new policies etc.)
 
 ### I: Influences 
+About something really happened.
 (experience, symptoms, daily life, lose job, what people do or change during covid perioed)
 
 ### P: Opinion comments 
+Something maybe not happen.
 Including emotional comments and opinions about Covid, ironic comments, doubt comments, questions, concerns.
 
 ("I don't want to die" "I hate getting tested" "Covid will live with us forever" "@xxx have you ever consider xxx?")
