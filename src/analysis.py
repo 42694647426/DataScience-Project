@@ -18,7 +18,9 @@ def bar_graph(df: pd.DataFrame):
     df_count = df_count.groupby(["Topic", "Sentiment"])["Twitts"].count()
     print(df_count.head(5))
     df_count.unstack("Sentiment").plot.bar()
+    plt.title("Count of tweets for Topics and Sentiments")
     plt.ylabel("Count")
+    plt.xlabel("Topics")
     plt.xticks(rotation = 0)
     plt.show()
 
@@ -27,9 +29,10 @@ def word_cloud(df: pd.DataFrame):
 
     comment_words = ''
     stopwords = set(STOPWORDS)
-    
+    stopwords.add("https")
+    stopwords.add("@")
     # iterate through the csv file
-    for val in df.CONTENT:
+    for val in df.Twitts:
         
         # typecaste each val to string
         val = str(val)
@@ -60,6 +63,7 @@ def tfidf(df: pd.DataFrame):
     pass
 
 if __name__ =="__main__":
-    df = pd.read_csv('data/tweets_anno_700_to_1000.tsv',sep='\t', index_col=False, encoding= 'unicode_escape')
+    df = pd.read_csv('data/new_clear_twitts_anno_1-1000.tsv',sep='\t', index_col=False, encoding= 'unicode_escape')
     bar_graph(df)
+    word_cloud(df)
 
