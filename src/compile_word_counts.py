@@ -21,6 +21,8 @@ def main(input_file):
 
     # Make everything lower case and take all puntionations
     for category in dialogues.keys():
+        dialogues[category] = dialogues[category].replace(r'http\S+|www.\S+', ' ', regex=True)
+        dialogues[category] = dialogues[category].replace(r'@\S+|#\S+', ' ', regex=True)
         dialogues[category] = dialogues[category].replace(r'[()\[\],-.?!:;#&]+', ' ', regex=True)
         dialogues[category] = dialogues[category].str.lower()
 
