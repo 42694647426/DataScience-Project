@@ -1,3 +1,6 @@
+# Analysis of tweets regarding Covid 19 situation
+The project focus on the analysis of the tweets concerning the current Covid 19 situation in a 3-days window. The collected posts will be cleaned (elimininate invalid data) and classified into 5 categories listed below and labeled with the sentiment. A stream of analysis was performed and the results were embedded into the report. 
+
 # Topic Category
 3~8 Topics
 
